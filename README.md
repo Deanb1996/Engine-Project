@@ -21,6 +21,8 @@ To make OpenAL work you may have to modify your filepaths in project properties 
 
 (...\Summer Project Git\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\libs\Win32)
 
+3. Linker -> Input -> Additional Dependencies (OpenAL32.lib; - Add to end before %(AdditionalDependencies)
+
 #include "al.h" 
 #include "alc.h" 
 #include "alut.h"
