@@ -13,15 +13,15 @@ GLM provides magical maths things like Vector maths etc.
 
 To make OpenAL work you may have to modify your filepaths in project properties to point towards the location of the OpenAL folder:
 
-1. C/C++ -> General -> Additional Include Directories 
+1. Right-Click on the Project Solution and select Properties.
 
-(...\Summer Project Git\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL)
+2. Go to "C/C++ -> General -> Additional Include Directories" and add in correct filepath e.g.
+	(...\Engine-Project\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL)
 
-2. Linker -> General -> Additional Library Directories
+3. Go to "Linker -> General -> Additional Library Directories" and add in correct filepath e.g.
+	(...\Engine-Project\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\libs\Win32)
 
-(...\Summer Project Git\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\libs\Win32)
-
-3. Linker -> Input -> Additional Dependencies (OpenAL32.lib; - Add to end before %(AdditionalDependencies))
+4. Go to to "Linker -> Input -> Additional Dependencies" and add in OpenAL32.lib; directly before %(AdditionalDependencies)
 
 #include "al.h" 
 #include "alc.h" 
