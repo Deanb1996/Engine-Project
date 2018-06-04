@@ -24,3 +24,9 @@ To make OpenAL work you may have to modify your filepaths in project properties 
 #include "al.h" 
 #include "alc.h" 
 #include "alut.h"
+
+
+Engine Design:
+
+Download NClass to view the Engine Design.ncp, already contains a framework of the core stuff we'll need, feel free to add stuff/flesh out the classes.
+
