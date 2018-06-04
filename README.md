@@ -30,3 +30,12 @@ Engine Design:
 
 Download NClass to view the Engine Design.ncp, already contains a framework of the core stuff we'll need, feel free to add stuff/flesh out the classes.
 
+
+
+
+Contributors:
+
+Anthony Beacock
+Dean Barnard
+Jakob Scrivener
+Reece Giles
