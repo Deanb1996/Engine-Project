@@ -7,6 +7,7 @@
 - Audio Buffer Object
 - Resource Manager (High Priority)
 - Input Manager (High Priority)
+- Render System (High Priority)
 
 ###### Dean Barnard:
 - Physics System
