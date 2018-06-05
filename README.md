@@ -66,3 +66,8 @@ Download NClass to view the Engine Design.ncp, already contains a framework of t
 
 http://nclass.sourceforge.net/
 
+## Coding Conventions
+
+- Use Include Guards in all header files (https://www.youtube.com/watch?v=RU5JUHAiR18&app=desktop)
+- Name files appropriately (eg. Components = cHealth, Managers = mSystem, Systems = mRender, Objects = oEntity)
+- Pass by value if small type like int, pass by reference if larger object, pass by pointer if you absolutely need to (eg. parameter can be null)
