@@ -18,7 +18,7 @@
 
 ###### Jakob Scrivener:
 - Render System (Basic Rendering High Priority)
-- Geometry Object (High Priority)
+- Geometry Object (Basic Geometry High Priority)
 - Resource Manager (High Priority)
 - Camera Object
 
