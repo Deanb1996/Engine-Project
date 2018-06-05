@@ -1,15 +1,47 @@
 # Engine-Project
 
-Libraries:
+## Contributors:
+
+###### Anthony Beacock:
+- Audio System
+- Audio Buffer Object
+- Resource Manager (High Priority)
+- Input Manager (High Priority)
+
+###### Dean Barnard:
+- Physics System
+- Collision System
+- System Manager (High Priority)
+- Entity Manager (High Priority)
+- Entity Object (High Priority)
+
+###### Jakob Scrivener:
+- Render System (Basic Rendering High Priority)
+- Geometry Object (High Priority)
+- Resource Manager (High Priority)
+- Camera Object
+
+###### Reece Giles:
+- AI System
+- Scene Manager (High Priority)
+- Scene Object (High Priority)
+- GUI Object
+
+## Libraries:
+
+###### GLFW
 
 GLFW provides basic functionality to create an OpenGL window, without having to mess around with Win32 API. 
 
 #include "GLFW\glfw3.h"
 
+###### GLM
+
 GLM provides magical maths things like Vector maths etc.
 
 #include "glm\glm.hpp"
 
+###### OpenAL
 
 To make OpenAL work you may have to modify your filepaths in project properties to point towards the location of the OpenAL folder:
 
@@ -27,17 +59,9 @@ To make OpenAL work you may have to modify your filepaths in project properties 
 #include "alc.h" 
 #include "alut.h"
 
-
-Engine Design:
+## Engine Design:
 
 Download NClass to view the Engine Design.ncp, already contains a framework of the core stuff we'll need, feel free to add stuff/flesh out the classes.
 
+http://nclass.sourceforge.net/
 
-
-
-Contributors:
-
-Anthony Beacock
-Dean Barnard
-Jakob Scrivener
-Reece Giles
