@@ -3,13 +3,12 @@
 
 class ISystem
 {
-public:
+protected: 
+	virtual void OnAction() = 0; // setting to 0 creates a pure virtual function
+	virtual void AssignEntity(oEntity& entity) = 0;
+	virtual void DestroyEntity(oEntity& entity) = 0;
 
-	virtual void OnAction();
-	virtual void AssignEntity(oEntity entity);
-	virtual void DestroyEntity(oEntity entity);
-
-	ISystem();
-	~ISystem();
+private:
+	string name;
 };
 
