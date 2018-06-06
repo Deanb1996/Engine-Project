@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "cTransform.h"
 
 cTransform::cTransform(vec3 & t, vec3 & r, vec3 & s)
