@@ -24,8 +24,8 @@ void sRender::DestroyEntity(oEntity& entity)
 
 void sRender::OnAction()
 {
-	for (int i = 0; i < entityList.size(); ++i)
+	/*for (int i = 0; i < entityList.size(); ++i)
 	{
 		vector<IComponent> componentList;
-	}
+	}*/
 }
