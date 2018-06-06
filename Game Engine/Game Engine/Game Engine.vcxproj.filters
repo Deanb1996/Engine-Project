@@ -48,15 +48,19 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="oEntity.h">
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
+=======
+>>>>>>> 64df5c8d94b38d91f2e8ff0f9ba7c579bc0b3e2b
     <ClInclude Include="IComponent.h">
       <Filter>Header Files\Components</Filter>
     </ClInclude>
     <ClInclude Include="ISystem.h">
       <Filter>Header Files\Systems</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="sRender.h">
       <Filter>Header Files\Systems</Filter>
     </ClInclude>
@@ -65,6 +69,25 @@
     </ClInclude>
     <ClInclude Include="cVelocity.h">
       <Filter>Header Files\Components</Filter>
+=======
+    <ClInclude Include="mResource.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="oEntity.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="sRender.h">
+      <Filter>Header Files\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="cGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cTexture.h">
+      <Filter>Header Files</Filter>
+>>>>>>> 64df5c8d94b38d91f2e8ff0f9ba7c579bc0b3e2b
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +97,7 @@
     <ClCompile Include="Game Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="sRender.cpp">
       <Filter>Source Files\Systems</Filter>
     </ClCompile>
@@ -85,6 +109,22 @@
     </ClCompile>
     <ClCompile Include="oEntity.cpp">
       <Filter>Source Files\Objects</Filter>
+=======
+    <ClCompile Include="mResource.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sRender.cpp">
+      <Filter>Source Files\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="cGeometry.cpp">
+      <Filter>Header Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cShader.cpp">
+      <Filter>Header Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cTexture.cpp">
+      <Filter>Source Files</Filter>
+>>>>>>> 64df5c8d94b38d91f2e8ff0f9ba7c579bc0b3e2b
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
