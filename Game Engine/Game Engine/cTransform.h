@@ -22,7 +22,7 @@ private:
 
 public:
 	cTransform(vec3 &t, vec3 &r, vec3 &s);
-	bool SetTransform();
+	void SetTransform();
 	vec3& GetTranslation();
 	void SetTranslation(vec3 &translationIn);
 	vec3& GetRotation();

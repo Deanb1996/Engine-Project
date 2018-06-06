@@ -1,6 +1,5 @@
 #ifndef RENDER
 #define RENDER
-#pragma once
 #include <iostream>
 #include <string>
 #include <vector>
