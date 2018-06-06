@@ -1,6 +1,7 @@
 class IComponent
 {
 public:
+
 	enum ComponentMasks
 	{
 		COMPONENT_NONE = 0,

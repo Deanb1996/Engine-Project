@@ -6,23 +6,28 @@ oEntity::oEntity(string &nameIn)
 	name = nameIn;
 }
 
-void oEntity::AddComponent(IComponent & componentIn)
+void oEntity::AddComponent(IComponent &componentIn)
 {
 	componentList.push_back(componentIn);
-	mask | componentIn.ComponentMask;
+	mask |= componentIn.ComponentMask;
 }
 
-string& oEntity::Name()
+string& oEntity::GetName()
 {
-	return string();
+	return name;
+}
+
+void oEntity::SetName(string &nameIn)
+{
+	name = nameIn;
 }
 
 IComponent::ComponentMasks oEntity::Mask()
 {
-	return IComponent::ComponentMasks();
+	return mask;
 }
 
 vector<IComponent>& oEntity::Components()
 {
-	return vector<IComponent>();
+	return componentList;
 }
