@@ -14,6 +14,16 @@ public:
 		COMPONENT_HEALTH = 1 << 7
 	};
 
+	inline friend ComponentMasks operator|(ComponentMasks a, ComponentMasks b)
+	{
+		return (ComponentMasks)((int)(a) | (int)(b));
+	}
+
+	inline friend ComponentMasks operator|=(ComponentMasks& a, ComponentMasks b)
+	{
+		return (ComponentMasks&)((int&)(a) |= (int)(b));
+	}
+
 	virtual ComponentMasks ComponentMask() = 0;
 };
 

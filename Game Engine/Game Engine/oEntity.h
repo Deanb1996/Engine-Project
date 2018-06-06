@@ -15,11 +15,11 @@ private:
 	IComponent::ComponentMasks mask;
 
 public:
-	oEntity(string name);
-	void AddComponent(IComponent &component);
-	string Name();
+	oEntity(string &nameIn);
+	void AddComponent(IComponent &componentIn);
+	string& Name();
 	IComponent::ComponentMasks Mask();
-	vector<IComponent> Components();
+	vector<IComponent>& Components();
 };
 
 #endif // !ENTITY

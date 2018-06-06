@@ -18,9 +18,9 @@ vec3& cTransform::GetTranslation()
 	return translation;
 }
 
-void cTransform::SetTranslation(vec3 & v)
+void cTransform::SetTranslation(vec3 &translationIn)
 {
-	translation = v;
+	translation = translationIn;
 }
 
 vec3& cTransform::GetRotation()
@@ -28,9 +28,9 @@ vec3& cTransform::GetRotation()
 	return rotation;
 }
 
-void cTransform::SetRotation(vec3 & v)
+void cTransform::SetRotation(vec3 &rotationIn)
 {
-	rotation = v;
+	rotation = rotationIn;
 }
 
 vec3& cTransform::GetScale()
@@ -38,9 +38,9 @@ vec3& cTransform::GetScale()
 	return scale;
 }
 
-void cTransform::SetScale(vec3 & v)
+void cTransform::SetScale(vec3 &scaleIn)
 {
-	scale = v;
+	scale = scaleIn;
 }
 
 mat4& cTransform::GetTransform()
@@ -48,9 +48,9 @@ mat4& cTransform::GetTransform()
 	return transform;
 }
 
-void cTransform::SetTransform(mat4 & m)
+void cTransform::SetTransform(mat4 &transformIn)
 {
-	transform = m;
+	transform = transformIn;
 }
 
 vec3& cTransform::GetForward()
@@ -58,9 +58,9 @@ vec3& cTransform::GetForward()
 	return forward;
 }
 
-void cTransform::SetForward(vec3 & v)
+void cTransform::SetForward(vec3 &forwardIn)
 {
-	forward = v;
+	forward = forwardIn;
 }
 
 vec3& cTransform::GetRight()
@@ -68,9 +68,9 @@ vec3& cTransform::GetRight()
 	return right;
 }
 
-void cTransform::SetRight(vec3 & v)
+void cTransform::SetRight(vec3 &rightIn)
 {
-	right = v;
+	right = rightIn;
 }
 
 vec3& cTransform::GetUp()
@@ -78,9 +78,9 @@ vec3& cTransform::GetUp()
 	return up;
 }
 
-void cTransform::SetUp(vec3 & v)
+void cTransform::SetUp(vec3 &upIn)
 {
-	up = v;
+	up = upIn;
 }
 
 IComponent::ComponentMasks cTransform::ComponentMask()
