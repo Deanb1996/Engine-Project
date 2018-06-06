@@ -13,16 +13,16 @@ class oEntity
 {
 private:
 	string name;
-	vector<IComponent> componentList;
+	vector<IComponent*> componentList;
 	IComponent::ComponentMasks mask;
 
 public:
 	oEntity(string &nameIn);
-	void AddComponent(IComponent &componentIn);
+	void AddComponent(IComponent* componentIn);
 	string& GetName();
 	void SetName(string &nameIn);
 	IComponent::ComponentMasks Mask();
-	vector<IComponent>& Components();
+	vector<IComponent*>& Components();
 };
 
 #endif // !ENTITY
