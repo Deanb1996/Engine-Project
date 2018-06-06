@@ -1,6 +1,14 @@
 #include "stdafx.h"
 #include "oEntity.h"
 
+oEntity::oEntity()
+{
+}
+
+oEntity::~oEntity()
+{
+}
+
 oEntity::oEntity(string &nameIn)
 {
 	name = nameIn;
@@ -31,3 +39,4 @@ vector<IComponent*>& oEntity::Components()
 {
 	return componentList;
 }
+

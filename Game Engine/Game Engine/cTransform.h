@@ -6,7 +6,7 @@
 
 using namespace glm;
 
-class cTransform : IComponent
+class cTransform : public IComponent
 {
 private:
 	mat4 transform;
