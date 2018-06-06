@@ -1,4 +1,19 @@
 ﻿  stdafx.cpp
+  sRender.cpp
+  oScene.cpp
+  oEntity.cpp
+  mScene.cpp
+  mResource.cpp
+e:\documents\game projects\summer project git\game engine\game engine\header files\managers\mresource.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  mInput.cpp
   Game Engine.cpp
-  Game Engine.vcxproj -> E:\Documents\Game Projects\Game Engine\Debug\Game Engine.exe
-  Game Engine.vcxproj -> E:\Documents\Game Projects\Game Engine\Debug\Game Engine.pdb (Full PDB)
+  cVelocity.cpp
+  cTransform.cpp
+  cTexture.cpp
+  cShader.cpp
+  cGeometry.cpp
+  Generating Code...
+e:\documents\game projects\summer project git\game engine\game engine\source files\managers\mscene.cpp(43): warning C4715: 'mScene::OpenWindow': not all control paths return a value
+e:\documents\game projects\summer project git\game engine\game engine\source files\managers\mscene.cpp(30): warning C4715: 'mScene::InitialiseGLFW': not all control paths return a value
+  Game Engine.vcxproj -> E:\Documents\Game Projects\Summer Project Git\Game Engine\Debug\Game Engine.exe
+  Game Engine.vcxproj -> E:\Documents\Game Projects\Summer Project Git\Game Engine\Debug\Game Engine.pdb (Full PDB)

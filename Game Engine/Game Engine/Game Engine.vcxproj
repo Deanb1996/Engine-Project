@@ -88,13 +88,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>E:\Documents\Game Projects\Summer Project Git\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Documents\Game Projects\Summer Project Git\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\include\AL;E:\Documents\Game Projects\Summer Project Git\Game Engine\Game Engine\Header Files;E:\Documents\Game Projects\Summer Project Git\Game Engine\Game Engine\Header Files\Managers;E:\Documents\Game Projects\Summer Project Git\Game Engine\Game Engine\Header Files\Systems;E:\Documents\Game Projects\Summer Project Git\Game Engine\Game Engine\Header Files\Objects;E:\Documents\Game Projects\Summer Project Git\Game Engine\Game Engine\Header Files\Components</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>E:\Documents\Game Projects\Summer Project Git\OpenAL\openal-soft-1.18.2-bin\openal-soft-1.18.2-bin\libs\Win32</AdditionalLibraryDirectories>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;OpenAL32.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -148,35 +148,39 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cTransform.h" />
-    <ClInclude Include="cVelocity.h" />
-    <ClInclude Include="IComponent.h" />
-    <ClInclude Include="cGeometry.h" />
-    <ClInclude Include="cShader.h" />
-    <ClInclude Include="cTexture.h" />
-    <ClInclude Include="ISystem.h" />
-    <ClInclude Include="mResource.h" />
-    <ClInclude Include="oEntity.h" />
-    <ClInclude Include="sRender.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Header Files\Components\cGeometry.h" />
+    <ClInclude Include="Header Files\Components\cShader.h" />
+    <ClInclude Include="Header Files\Components\cTexture.h" />
+    <ClInclude Include="Header Files\Components\cTransform.h" />
+    <ClInclude Include="Header Files\Components\cVelocity.h" />
+    <ClInclude Include="Header Files\Components\IComponent.h" />
+    <ClInclude Include="Header Files\Managers\mInput.h" />
+    <ClInclude Include="Header Files\Managers\mResource.h" />
+    <ClInclude Include="Header Files\Managers\mScene.h" />
+    <ClInclude Include="Header Files\Objects\IScene.h" />
+    <ClInclude Include="Header Files\Objects\oEntity.h" />
+    <ClInclude Include="Header Files\Objects\oScene.h" />
+    <ClInclude Include="Header Files\stdafx.h" />
+    <ClInclude Include="Header Files\Systems\ISystem.h" />
+    <ClInclude Include="Header Files\Systems\sRender.h" />
+    <ClInclude Include="Header Files\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cTransform.cpp" />
-    <ClCompile Include="cVelocity.cpp" />
-    <ClCompile Include="Game Engine.cpp" />
-    <ClCompile Include="oEntity.cpp" />
-    <ClCompile Include="cGeometry.cpp" />
-    <ClCompile Include="cShader.cpp" />
-    <ClCompile Include="cTexture.cpp" />
-    <ClCompile Include="mResource.cpp" />
-    <ClCompile Include="sRender.cpp" />
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="Source Files\Components\cGeometry.cpp" />
+    <ClCompile Include="Source Files\Components\cShader.cpp" />
+    <ClCompile Include="Source Files\Components\cTexture.cpp" />
+    <ClCompile Include="Source Files\Components\cTransform.cpp" />
+    <ClCompile Include="Source Files\Components\cVelocity.cpp" />
+    <ClCompile Include="Source Files\Game Engine.cpp" />
+    <ClCompile Include="Source Files\Managers\mInput.cpp" />
+    <ClCompile Include="Source Files\Managers\mResource.cpp" />
+    <ClCompile Include="Source Files\Managers\mScene.cpp" />
+    <ClCompile Include="Source Files\Objects\oEntity.cpp" />
+    <ClCompile Include="Source Files\Objects\oScene.cpp" />
+    <ClCompile Include="Source Files\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Source Files\Systems\sRender.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
