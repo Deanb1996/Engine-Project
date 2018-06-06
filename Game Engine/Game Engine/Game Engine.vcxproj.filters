@@ -1,133 +1,85 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Header Files\Components">
-      <UniqueIdentifier>{e2a2fcea-68ad-4680-bb72-556194949519}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Systems">
-      <UniqueIdentifier>{48df4001-ee0d-4096-81af-19acd4bb93a5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Managers">
-      <UniqueIdentifier>{187deea2-edbe-4aa5-9635-149e4501beb1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Objects">
-      <UniqueIdentifier>{9ed627b7-7e88-466b-8bed-0b14c1496cf1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Components">
-      <UniqueIdentifier>{3310b09d-1ed5-4aad-9ce6-2a9aa9650ca9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Managers">
-      <UniqueIdentifier>{8a91c587-f9f3-44e3-b1aa-eab714bcd500}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Objects">
-      <UniqueIdentifier>{ce9c21bc-c367-4e9e-ae52-d8a00127c7eb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Systems">
-      <UniqueIdentifier>{2b724026-0e64-422e-8452-f362b49fec61}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="Game Engine.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="cGeometry.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cShader.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cTexture.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cTransform.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="cVelocity.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="mResource.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sRender.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="oEntity.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="cGeometry.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cShader.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cTexture.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cTransform.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cVelocity.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="mResource.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="sRender.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="ISystem.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="oEntity.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="oEntity.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-=======
->>>>>>> 64df5c8d94b38d91f2e8ff0f9ba7c579bc0b3e2b
-    <ClInclude Include="IComponent.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="ISystem.h">
-      <Filter>Header Files\Systems</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="sRender.h">
-      <Filter>Header Files\Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="cTransform.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="cVelocity.h">
-      <Filter>Header Files\Components</Filter>
-=======
-    <ClInclude Include="mResource.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="oEntity.h">
-      <Filter>Header Files\Objects</Filter>
-    </ClInclude>
-    <ClInclude Include="sRender.h">
-      <Filter>Header Files\Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="cGeometry.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cShader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cTexture.h">
-      <Filter>Header Files</Filter>
->>>>>>> 64df5c8d94b38d91f2e8ff0f9ba7c579bc0b3e2b
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Game Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="sRender.cpp">
-      <Filter>Source Files\Systems</Filter>
-    </ClCompile>
-    <ClCompile Include="cTransform.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="cVelocity.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="oEntity.cpp">
-      <Filter>Source Files\Objects</Filter>
-=======
-    <ClCompile Include="mResource.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="sRender.cpp">
-      <Filter>Source Files\Systems</Filter>
-    </ClCompile>
-    <ClCompile Include="cGeometry.cpp">
-      <Filter>Header Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="cShader.cpp">
-      <Filter>Header Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="cTexture.cpp">
-      <Filter>Source Files</Filter>
->>>>>>> 64df5c8d94b38d91f2e8ff0f9ba7c579bc0b3e2b
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+    <Filter Include="Components">
+      <UniqueIdentifier>{96a3c663-19c7-4db6-b796-414e5a523990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{c672254e-1a0c-4393-96d3-c117de2972bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{fb4c243f-cfcc-46ab-97aa-81351e797c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{a27f64d4-c223-4877-ae69-cce4ee67c8a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
