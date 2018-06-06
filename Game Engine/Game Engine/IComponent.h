@@ -1,3 +1,6 @@
+#ifndef ICOMPONENT
+#define ICOMPONENT
+
 class IComponent
 {
 public:
@@ -28,3 +31,4 @@ public:
 	virtual ComponentMasks ComponentMask() = 0;
 };
 
+#endif // !ICOMPONENT

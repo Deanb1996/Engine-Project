@@ -4,6 +4,8 @@
 #include "IComponent.h"
 #include <string>
 #include <vector>
+#include "cTransform.h"
+#include <algorithm>
 
 using namespace std;
 
@@ -17,7 +19,8 @@ private:
 public:
 	oEntity(string &nameIn);
 	void AddComponent(IComponent &componentIn);
-	string& Name();
+	string& GetName();
+	void SetName(string &nameIn);
 	IComponent::ComponentMasks Mask();
 	vector<IComponent>& Components();
 };

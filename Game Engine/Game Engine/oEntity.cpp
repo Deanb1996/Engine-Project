@@ -9,7 +9,7 @@ oEntity::oEntity(string &nameIn)
 void oEntity::AddComponent(IComponent &componentIn)
 {
 	componentList.push_back(componentIn);
-	mask |= componentIn.ComponentMask;
+	mask |= componentIn.ComponentMask();
 }
 
 string& oEntity::GetName()
